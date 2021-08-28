@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body 
+    style="position: relative;" 
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example3"
+    data-bs-offset="10"
+    tabindex="0"
+  >
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-example3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-bag-fill"></i>
+            <span class="align-center">Noni Socks</span>
+          </a>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comentarios">Comentarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#suscribete">Suscribete</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desabilitado</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Cuándo usamos fixed-top en el naveste queda por oncima de todo, por esto no se muestra un pedacito del slider -->
+
+      <!-- Slider start -->
+      <section id="inicio">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slider-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slider-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slider-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <!-- Slider end -->
+
+      <!-- Start servicios -->
+      <main  id="servicios" class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="text-center py-5 text-primary">
+            <i class="bi bi-gift h4"></i>
+            <i class="bi bi-gift h4 text-danger"></i>
+            <i class="bi bi-gift h4"></i>
+          </div>
+          <h1 class="text-center display-4 mb-5">Servicios</h1>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-4">
+              <h5>Lorem, ipsum.</h5>
+              <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste adipisci quod incidunt exercitationem consequuntur blanditiis asperiores alias id obcaecati iure expedita culpa molestiae commodi voluptates aspernatur ad eaque, tempore saepe!</p>
+              <button class="btn btn-warning btn-outline-light mb-5 mb-lh-0">aceptar</button>
+            </div>
+            <div class="col-12 col-lg-8">
+              <img src="img/slider-4.jpg" alt="" class="img-fluid rounded">
+            </div>
+          </div>
+          <h1 class="py-5 display-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptate autem soluta aliquid fugit repellendus adipisci impedit saepe, nulla exercitationem pariatur accusamus dolore voluptatibus culpa. Saepe natus quidem repellendus quas.</h1>
+        </div>
+      </main>
+      <!-- End servicios -->
+
+      <!-- Start Comentarios -->
+      <section id="comentarios" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center py-5">
+            <i class="bi bi-bootstrap-fill h4"></i>
+            <i class="bi bi-bootstrap-fill h4"></i>
+            <i class="bi bi-bootstrap-fill h4"></i>
+            <i class="bi bi-bootstrap-fill h4"></i>
+          </div>
+          <h2 class="text-center mb-5 display-4">Comentarios</h2>
+          <p class="lead mb-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus a quae enim accusantium ipsa saepe cum sed aperiam, asperiores quibusdam quod ipsum! Possimus, tempora sapiente. Dignissimos excepturi totam atque.</p>
+        
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <img src="img/vertical.jpg" class="img-fluid rounded" alt="...">
+            </div>
+  
+            <div class="col-12 col-md-6 col-lg-8 col-xl-9">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Comentarios -->
+
+      <!-- Start Suscribete -->
+      <section id="suscribete" class="bg-secondary text-light">
+        <div class="container ">
+          <div class="text-center h1 py-5">
+            <i class="bi bi-award-fill"></i>
+            <i class="bi bi-award-fill"></i>
+            <i class="bi bi-award-fill"></i>
+          </div>
+          <h2 class="text-center mb-5 display-4">Suscribete</h2>
+          <p class="lead text-center pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt velit officiis at quasi culpa possimus, aperiam deleniti molestias itaque, in nostrum minus impedit. Nesciunt a numquam, velit nulla officiis voluptate?</p>
+     
+          <div class="row text-dark text-center">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="my-5">$100</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                  </ul>
+                  <div class="card-body">
+                    <button class="btn btn-outline-dark" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#exampleModal1"
+                    >suscribete</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="my-5">$100</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                  </ul>
+                  <div class="card-body">
+                    <button class="btn btn-outline-dark" 
+                      data-bs-toggle="modal"  
+                      data-bs-target="#staticBackdrop"
+                    >suscribete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="my-5">$100</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                  </ul>
+                  <div class="card-body">
+                    <button 
+                      class="btn btn-outline-dark" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#staticBackdrop2"
+                    >suscribete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Suscribete -->
+
+      <!-- Start footer -->
+      <footer class="container-fluid bg-dark py-5 text-center text-light">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed voluptatum doloremque aliquam consequuntur mollitia tempore dolorum beatae illo consequatur quia eligendi corrupti labore tenetur fugiat dolor, illum, distinctio sapiente.</p>
+      </footer>
+      <!-- End footer -->
+
+
+
+      <!-- Start Modal 1 -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End Modal 1 -->
+
+      <!-- Start Modal 2 -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal 2 -->
+
+      <!-- Start Modal 3 -->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title 2222</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal 3 -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
